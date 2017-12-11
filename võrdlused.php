@@ -37,5 +37,21 @@ $tulemus = $var1 === $var3;
 echo 'kas $var1 === $var2? - '.$tulemus;
 $tulemus = $var1 != $var4;
 echo 'kas $var1 != $var4? - '.$tulemus;
+echo '<hr />';
+// ++ --
+$a =2; $b = 5;
+$c = $a++; //a = 3; b = 5 ;
+$d = $b--; //c = 3; d = 4 ;
+echo 'a ='.$a.
+    '; b = '.$b.
+    '; c = '.$c.
+    '; d = '.$d.'<br />';
+$a =2; $b = 5;
+$c = $a++; //a = 3; b = 4 ;
+$d = $b--; //c = 3; d = 4 ;
+echo 'a ='.$a.
+    '; b = '.$b.
+    '; c = '.$c.
+    '; d = '.$d.'<br />';
 
 
