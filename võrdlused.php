@@ -15,3 +15,13 @@ $var5 = 2.0;
 $var6 = '2';
 $var7 = true;
 $var8 = false;
+// väljastame väärtused ja nende tüübid
+echo $var1.' - '.gettype($var1).'<br />';
+echo $var2.' - '.gettype($var2).'<br />';
+echo $var3.' - '.gettype($var3).'<br />';
+echo $var4.' - '.gettype($var4).'<br />';
+echo $var5.' - '.gettype($var5).'<br />';
+echo $var6.' - '.gettype($var6).'<br />';
+echo $var7.' - '.gettype($var7).'<br />';
+echo $var8.' - '.gettype($var8).'<br />';
+?>
