@@ -54,4 +54,13 @@ echo 'a ='.$a.
     '; c = '.$c.
     '; d = '.$d.'<br />';
 
+$s = '5';
+$s++;
+echo $s.'<br />';
+// konstandite defineerimine
+define('NUMBER', 5); // defineerimine
+echo NUMBER.'<br />';
+//NUMBER++; - EI SAA OLLA
+
+
 
