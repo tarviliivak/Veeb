@@ -5,6 +5,7 @@
  * Date: 13.12.2017
  * Time: 8:44
  */
+header('Refresh: 2');
 $ilm = 'päike paistab';
 if ($ilm == 'sajab') {
     $tuju = 'halb';
