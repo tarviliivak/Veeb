@@ -15,6 +15,12 @@ if ($ilm == 'sajab') {
 echo 'Väljas '.$ilm. '<br />';
 echo 'Minul on '.$tuju.' tuju<br />';
 //
+$ilm = 'sajab'
+$tuju = ($ilm == 'sajab')? 'halb' : 'hea';
+echo 'Väljas '.$ilm. '<br />';
+echo 'Minul on '.$tuju.' tuju<br />';
+//
+
 $vanus = rand(0, 100);
 if ($vanus >= 0 and $vanus < 11){
     $staatus = 'laps';
