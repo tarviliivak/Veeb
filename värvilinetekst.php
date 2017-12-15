@@ -12,7 +12,6 @@ header('Refresh: 0.2');
          $juhuTaisarv = rand(0,15);
          $juhuflex = dechex($juhuTaisarv);
          $varv = $varv.$juhuflex;
-
      }
      echo '<font color="' .$varv. '"> Värviline tekst</font><br />';
  }
