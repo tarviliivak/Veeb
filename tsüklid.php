@@ -19,6 +19,5 @@ for($arv = 1; $arv <= 10; $arv++){
 
 $ kord = 1;
 while ($kord <= 5){
-    echo '<1>'.$kord.'<1>';
-    $kord++;
+    echo '<1>'.$kord++.'<1>';
 }
