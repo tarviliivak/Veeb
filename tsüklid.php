@@ -17,7 +17,9 @@ for($arv = 1; $arv <= 10; $arv++){
 //täienda antud lahendust nii, et paaris arvud oleksid punased ja paaritud arvud sinised
 
 
-$ kord = 1;
-while ($kord <= 5){
-    echo '<1>'.$kord++.'<1>';
+$kord = 0;
+while ($kord++ <= 4){
+    if($kord == 3) continue;
+    echo '<i>'.$kord.'</i>';
+
 }
