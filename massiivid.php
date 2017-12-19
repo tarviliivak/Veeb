@@ -66,3 +66,29 @@ function valjastaMassiiv($massiiv){
         echo '</table>';
 }
 valjastaMassiiv($arvudeMassiiv);
+echo '<hr/>';
+//Muuda looMassiiv funktsiooni nii, et see võtaks parameetritena
+//ridade ja veergude arvu ja looks 2D masiivi ning tagastaks põhiprogrammile
+//funktsiooni nimeks paneme loo2DMassiiv
+//
+//
+//
+//
+//
+//
+function loo2DMassiiv($ridadeArv, $veergudeArv){
+    $massiiv2D = array();
+    for ($reanumber = 0; $reanumber < $ridadeArv; $reanumber++){
+        $massiiv2D[] = array();
+        for ($veerunumber = 0; $veerunumber < $veergudeArv; $veerunumber++){
+            $juhuarv = rand(0, 99);
+            $massiiv2D[$reanumber][] = $juhuarv;
+        }
+    }
+    return $massiiv2D;
+}
+
+$arvudeMassiiv2D = loo2DMassiiv(2, 3);
+echo '<pre>';
+print_r($arvudeMassiiv2D);
+echo '</pre>';
