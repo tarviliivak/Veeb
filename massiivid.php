@@ -13,7 +13,8 @@ print_r($arvud);
 echo '</pre>';
 echo '<hr />';
 $elementideArv =count($arvud);
-echo 'Massiiv $arvud koosneb '.$elementideArv.'elemendist<br />';
-for($i = 0; $i < $elementideArv; $i++){
+echo 'Massiiv $arvud koosneb '.count($arvud).'elemendist<br />';
+$arvud[] = 0;
+for($i = 0; $i < count($arvud); $i++){
     echo $arvud[$i].'<br />';
 }
