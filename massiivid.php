@@ -44,6 +44,7 @@ $arvudeMassiiv = looMassiiv(8 );
 echo '<pre>';
 print_r($arvudeMassiiv);
 echo '</pre>';
+
 //Loo funktsioon nimega valjastaMassiiv,
 //mis võtab parameetrina masiivi ja
 //väljastab tema elemendid
@@ -92,3 +93,52 @@ $arvudeMassiiv2D = loo2DMassiiv(2, 3);
 echo '<pre>';
 print_r($arvudeMassiiv2D);
 echo '</pre>';
+
+//Loo funktsioon nimega vahetaMimMax, mis võtab parameetrina
+//täisarvude massiivi(testimisel võib kasutada looMassiiv funktsiooniga genereeritud
+//massiivi)
+//ja leiab kõige väiksema ja kõige suurema elemendi antud massiivis ning vahetab nende
+//asukohad.Kontrolli, kontrolli, kas kohad on vahetatud kasutades
+//väljastaMassiiv funktsiooni
+//
+//
+//
+
+function vahetaMinMax($massiiv){
+    $min = min($massiiv);
+    $max = max($massiiv);
+    echo $min.'<br />';
+    echo $max.'<br />';
+    for($i = 0; $i < count($massiiv); $i++){
+        if ($massiiv[$i] == $min){
+            $massiiv[$i] == $max;
+        } elseif ($massiiv[$i] == $max){
+            $massiiv[$i] = $min;
+        }
+        echo $massiiv[$i].'- ';
+    }
+}
+
+echo '<hr />';
+vahetaMinMax($arvudeMassiiv);
+valjastaMassiiv($arvudeMassiiv);
+echo '<hr />';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
