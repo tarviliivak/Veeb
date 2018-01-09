@@ -120,15 +120,33 @@ echo '<hr />';
 vahetaMinMax($arvudeMassiiv);
 valjastaMassiiv($arvudeMassiiv);
 echo '<hr />';
+//Katsetamiseks kasuta järgmist massiivi:
+//1, 0, 6, 0, 0, 3, 5
+//Loo funktsioon nimega elementideKorrutis, mis võtab parameetrina
+//täisarvude massiivi ja leiab korrutisi nendest arvudes, mis on suuremad kui 0
+//ja mille indeksid on paarisarvud
+//Tulemus väljastatakse antud funktsiooni abil kujul
+//Tulemus: 1 * 6 * 5 = 30
 //
-//
-//
-//
-//
-//
-//
-//
+function elementideKorrutis($massiiv){
+    $tulemus = 1;
+    $korrutamismärk = 0;
+    echo 'Tulemus: ';
+    for($i = 0, $i < count($massiiv)); $i++){
+        if ($massiiv[$i] > 0 and $i % 2 == 0){
+            $tulemus = $tulemus * $massiiv[$i];
+            if($korrutamismärk != 0){
+                echo ' * '.$massiiv[$i];
+            } else {
+                echo $massiiv[$i];
+                $korrutamismärk = 1;
+            }
+        }
+        echo ' = '.$tulemus;
+    }
 
+echo '<hr />'
+elementideKorrutis(array(1, 0, 6, 0, 0, 3, 5));
 
 
 
