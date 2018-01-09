@@ -107,15 +107,12 @@ echo '</pre>';
 function vahetaMinMax($massiiv){
     $min = min($massiiv);
     $max = max($massiiv);
-    echo $min.'<br />';
-    echo $max.'<br />';
     for($i = 0; $i < count($massiiv); $i++){
         if ($massiiv[$i] == $min){
             $massiiv[$i] == $max;
         } elseif ($massiiv[$i] == $max){
             $massiiv[$i] = $min;
         }
-        echo $massiiv[$i].'- ';
     }
 }
 
@@ -123,8 +120,14 @@ echo '<hr />';
 vahetaMinMax($arvudeMassiiv);
 valjastaMassiiv($arvudeMassiiv);
 echo '<hr />';
-
-
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
