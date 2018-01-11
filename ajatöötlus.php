@@ -32,17 +32,17 @@ echo $kuupaev.'<br />';
 function vorm(){
     echo '
         <form action="'.$_SERVER['PHP_SELF'].'" method="post">
-            Eesnimi: <input type="text" name="Eesnimi">
+            Eesnimi: <input type="text" name="eesnimi">
             <br />
-            Perenimi: <input type="text" name="Perenimi">
+            Perenimi: <input type="text" name="perenimi">
             <br />
-            Päev: <input type="text" name="Päev">
+            Päev: <input type="text" name="paev">
             <br />
-            Kuu: <input type="text" name="Kuu">
+            Kuu: <input type="text" name="kuu">
             <br />
-            Aasta: <input type="text" name="Aasta">
+            Aasta: <input type="text" name="aasta">
             <br />
-            <input type="submit" value="Saada">
+            <input type="submit" value="saada">
         </form>
     ';
 
