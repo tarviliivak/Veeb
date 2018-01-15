@@ -12,4 +12,11 @@ class tekst
     //klassi omadused
     //class variables
     var $sonad = '';
+    //klassi tegevused
+    //klassi meetodid
+    //class methods
+    function maaraTekst($sonad){
+        $this ->sonad = $sonad;
+
+    }
 }
