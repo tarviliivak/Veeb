@@ -15,8 +15,17 @@ class tekst
     //klassi tegevused
     //klassi meetodid
     //class methods
+    /**
+     * tekst constructor.
+     * @param string $sonad
+     */
+    public function __construct($sonad = ''){
+        $this->maaraTekst($sonad);
+    }
     function maaraTekst($sonad){
-        $this ->sonad = $sonad;
-
+        $this->sonad = $sonad;
+    }
+    function prindiTekst(){
+        echo $this->sonad.'<br />';
     }
 }
