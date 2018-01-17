@@ -25,6 +25,16 @@ $minutekst = new tekst();
 $varvitutekst = new varvilinetekst('Varvitu tekst!');
 // väljastame objekti sisu kujul
 echo '<pre>';
-print_r($minutekst);
+print_r($varvitutekst);
 echo '</pre>';
 $varvitutekst->prindiTekst();
+
+//
+
+
+$Roosatekst = new varvilinetekst('Roosa tekst!', '#ff0066');
+// väljastame objekti sisu kujul
+echo '<pre>';
+print_r($Roosatekst);
+echo '</pre>';
+$Roosatekst->prindiTekst();
