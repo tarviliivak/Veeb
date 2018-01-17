@@ -16,4 +16,6 @@ $minuTabel->lisaRida(array(5, 6 , 7, 8 ));
 //
 echo '<pre>';
 print_r($minuTabel);
-echo '</pre>';
+echo '<pre>';
+// Väljastame tabeli teksti kuju
+$minuTabel->prindiTabel();
