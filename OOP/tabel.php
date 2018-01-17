@@ -36,6 +36,19 @@ class tabel
         array_push($this->tabelisisu, $jarjestatudrida);
         return true;
     }
-
+    function prindiTabel(){
+        echo '<pre>';
+        foreach ($this->pealkirjad as $pealkiri){
+            echo '<b>'.$pealkiri.'</b>'.' ';
+        }
+        echo "\n";
+        foreach ($this->tabelisisu as $reaElemendid){
+            foreach ($reaElemendid as $reaelement){
+                echo $reaelement.' ';
+            }
+            echo "\n";
+        }
+        echo '</pre>';
+    }
 
 }
