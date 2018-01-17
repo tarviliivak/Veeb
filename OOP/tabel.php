@@ -28,7 +28,14 @@ class tabel
     array_push($this->tabelisisu, $rida);
     return true;
     }
-
+    function lisaRidaPealkirjadega($ridaPealkirjadega){
+        $jarjestatudrida = array();
+        foreach ($this->pealkirjad as $pealkiri){
+            $jarjestatudrida[] = $ridaPealkirjadega[$pealkiri];
+        }
+        array_push($this->tabelisisu, $jarjestatudrida);
+        return true;
+    }
 
 
 }
