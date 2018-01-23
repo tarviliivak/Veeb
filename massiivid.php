@@ -14,3 +14,6 @@ echo '</pre>';
 echo '<hr />';
 $elementideArv = count($arvud);
 echo 'Massiiv $arvud koosneb '.$elementideArv.' elemendist<br />';
+for($i = 0; $i < $elementideArv; $i++){
+    echo $arvud[$i].'<br />';
+}
