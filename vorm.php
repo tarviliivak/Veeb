@@ -77,15 +77,17 @@ function valjastaVorm(){
     ';
 }
 function vormiAndmed(){
+//    $kasutaja = $_POST['kasutaja'];
+//    $parool = $_POST['parool'];
     echo '<pre>';
     print_r($_POST);
-    print_r($_GET);
-    print_r($_REQUEST);
-    print_r($_SERVER);
     echo '</pre>';
-}
-valjastaVorm();
-vormiAndmed();
+    if(!empty($_POST)){
+        extract($_POST);
+        foreach ($_POST as $voti=>$vaartus){
+            if(empty($_POST[$voti])){
+                echo 'Andmed peavad olema sisestatud!<br />';
+                exit;
             }
         }
         echo 'Tere, '.$kasutaja.'<br />';
