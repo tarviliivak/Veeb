@@ -88,3 +88,14 @@ $arvudeMassiiv2D = loo2DMassiiv(2, 3);
 echo '<pre>';
 print_r($arvudeMassiiv2D);
 echo '</pre>';
+/*
+ * Loo funktsioon nimega vahetaMinMax, mis võtab
+ * parameetrina täisarvude massiivi (testimises
+ * võib kasutada looMassiiv funktsiooniga
+ * genereeritud massiiv)
+ * ja leiab kõige väiksema ja kõige suurema
+ * elemendi antud massiivis ning vahetab nende asukohad.
+ *
+ * Kontrolli kas kohad on vahetatud kasutades
+ * valjastaMassiiv funktsiooni
+*/
