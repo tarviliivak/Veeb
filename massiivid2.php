@@ -101,3 +101,4 @@ $raamatud = array(
         'status' => 'valjas'
     )
 );
+raamatuteTabel($raamatud);
