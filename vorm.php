@@ -65,7 +65,7 @@ vormiAndmed();
  * on sooritatud õige arvu leidmisel.
  * */
 
-function valjastavorm(){
+function valjastaVorm(){
     echo '
         <form action="'.$_SERVER['PHP_SELF'].'" method="post">
             Kasutaja: <input type="text" name="kasutaja">
@@ -75,30 +75,17 @@ function valjastavorm(){
             <input type="submit" value="Saada">
         </form>
     ';
-
 }
-//
-/*function vormiAndmed(){
+function vormiAndmed(){
     echo '<pre>';
     print_r($_POST);
     print_r($_GET);
     print_r($_REQUEST);
     print_r($_SERVER);
     echo '</pre>';
-}*/
-//
-function vormiAndmed(){
-//    $kasutaja = $_POST['kasutaja'];
-//    $parool = $_POST['parool'];
-    echo '<pre>';
-    print_r($_POST);
-    echo '</pre>';
-    if(!empty($_POST)){
-        extract($_POST);
-        foreach ($_POST as $voti=>$vaartus){
-            if(empty($_POST[$voti])){
-                echo 'Andmed peavad olema sisestatud!<br />';
-                exit;
+}
+valjastaVorm();
+vormiAndmed();
             }
         }
         echo 'Tere, '.$kasutaja.'<br />';
