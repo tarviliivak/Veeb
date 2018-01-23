@@ -13,3 +13,8 @@ for($arv = 1; $arv <= 10; $arv++){
     }
     echo '<p style="color: '.$varv.';">'.$arv.'</p>';
 }
+$kord = 1;
+while($kord <= 5){
+    echo '<i>'.$kord.'</i>';
+    $kord++;
+}
