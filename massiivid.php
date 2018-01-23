@@ -44,4 +44,25 @@ function looMassiiv($elementideArv){
 $arvudeMassiiv = looMassiiv(8);
 echo '<pre>';
 print_r($arvudeMassiiv);
-echo '</pre>';}
+echo '</pre>';
+/*
+ * Loo funktsioon nimega valjastaMassiiv,
+ * mis võtab parameetrina massiivi ja
+ * väljastab tema elemendid
+ * üherealise tabeli kujul
+ * Väljundi loomisel kasutada foreach
+ * tsükkel
+ * */
+function valjastaMassiiv($massiiv){
+    echo '<table border="1">';
+    echo '<tr>';
+    foreach ($massiiv as $element){
+        echo '<td>';
+        echo $element;
+        echo '</td>';
+    }
+    echo '</tr>';
+    echo '</table>';
+}
+valjastaMassiiv($arvudeMassiiv);
+© 2018 GitHub, Inc.
