@@ -5,12 +5,12 @@
  * Date: 23.01.2018
  * Time: 16:21
  */
-date_default_timezone_set('Europe/Tallinn');
+/*date_default_timezone_set('Europe/Tallinn');
 $aegHetkel = time();
 $kellaaeg = date('G:i', $aegHetkel);
 echo $kellaaeg.'<br />';
 $kuupaev = date('j.m.Y');
-echo $kuupaev.'<br />';
+echo $kuupaev.'<br />';*/
 /*
  * Loo funktsioon nimega vorm, mis väljastab vormi
  * Vormi kaudu kasutajal on võimalus sisestada
@@ -26,3 +26,42 @@ echo $kuupaev.'<br />';
  *
  * Kontrollimiseks väljasta saadud väärtus
  * */
+function vorm(){
+    echo '
+        <form action="'.$_SERVER['PHP_SELF'].'" method="post">
+        Eesnimi: <input type="text" name="eesnimi"><br />
+        Perenimi: <input type="text" name="perenimi"><br />
+        Sünnikuupäev: <br />
+        Päev: <input type="text" name="paev"><br />
+        Kuu: <input type="text" name="kuu"><br />
+        Aasta: <input type="text" name="aasta"><br />
+        <input type="submit" value="Saada">
+        </form>
+    ';
+}
+function andmeteKontroll()
+{
+    $kontroll = false;
+    if (!empty($_POST)) {
+        foreach ($_POST as $voti => $vaartus) {
+            if (empty($_POST[$voti])) {
+                echo 'Andmed peavad olema sisestatud!<br />';
+                exit;
+            }
+        }
+        $kontroll =  true;
+    }
+    return $kontroll;
+}
+function ajaTootlus($paev, $kuu, $aasta){
+    if(andmeteKontroll()){
+        $aegUnixTimestamp = mktime(0, 0, 0, $kuu, $paev, $aasta);
+        $aeg = date('Y-m-d', $aegUnixTimestamp);
+    }
+    return $aeg;
+}
+vorm();
+if(andmeteKontroll()){
+    echo $_POST['eesnimi'].' '.$_POST['perenimi'].
+        ', sinu sünnikuupäev on '.ajaTootlus($_POST['paev'], $_POST['kuu'], $_POST['aasta']);
+}
