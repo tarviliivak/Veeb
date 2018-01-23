@@ -99,3 +99,12 @@ echo '</pre>';
  * Kontrolli kas kohad on vahetatud kasutades
  * valjastaMassiiv funktsiooni
 */
+function vahetaMinMax($massiiv){
+    $min = min($massiiv);
+    $max = max($massiiv);
+    echo $min.'<br />';
+    echo $max.'<br />';
+}
+echo '<hr />';
+vahetaMinMax($arvudeMassiiv);
+echo '<hr />';
