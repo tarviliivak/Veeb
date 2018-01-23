@@ -96,3 +96,19 @@ function vormiAndmed(){
 }
 valjastaVorm();
 vormiAndmed();
+/*
+ * Koosta mäng, kus kasutaja saab ära arvata programmis mõeldud täisarvu ühest viiekümneni. Alustuseks ära
+ * genereeri arv vaid pane ise paika - lihtsam ka testimine
+ *
+ * Vale arvu sisestamisel antakse kasutajale vihje, kas
+ * serveri poolt valitud arv on suurem või väiksem
+ * kasutaja sisestatud arvust.
+ *
+ * Täienda programmi selliselt, et kui õige vastuse ja
+ * kasutaja sisestatud arvu vahe on väiksem
+ * või võrdne 5-ga, siis teavitatakse kasutajat, et ta on
+ * õigele vastusele juba üsna lähedale jõudnud.
+ *
+ * Täineda programmi selliselt, et on kirjas, mitu katset
+ * on sooritatud õige arvu leidmisel.
+ * */
