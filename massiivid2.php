@@ -101,4 +101,6 @@ $raamatud = array(
         'status' => 'valjas'
     )
 );
+$kohalRaamatud = otsiRaamat($raamatud, 'sees');
+raamatuteTabel($kohalRaamatud);
 raamatuteTabel($raamatud);
