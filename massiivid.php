@@ -99,7 +99,7 @@ echo '</pre>';
  * Kontrolli kas kohad on vahetatud kasutades
  * valjastaMassiiv funktsiooni
 */
-function vahetaMinMax($massiiv){
+function vahetaMinMax(&$massiiv){
     $min = min($massiiv);
     $max = max($massiiv);
     for($i = 0; $i < count($massiiv); $i++){
@@ -114,3 +114,14 @@ echo '<hr />';
 vahetaMinMax($arvudeMassiiv);
 valjastaMassiiv($arvudeMassiiv);
 echo '<hr />';
+/*
+ * Katsetamiseks kasuta järmine massiiv:
+ * 1, 0, 6, 0, 0, 3, 5
+ * Loo funktsioon nimega elementideKorrutis, mis
+ * võtab parameetrina täisarvude massiivi ja leiab
+ * korrutis nendest arvudest, mis on suurem kui 0
+ * ja mille indeksid on paarisarvud. Tulemus väljastatakse
+ * antud funktsiooni abil kujul:
+ *
+ * Tulemus: 1 * 6 * 5 = 30
+*/
