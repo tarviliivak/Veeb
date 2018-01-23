@@ -51,3 +51,21 @@ foreach ($opilased as $opilane){
 }
 //
 //
+/*
+ * Katsetamiseks raamatud kirjeldav massiiv kujul:
+ * array(
+ *      array(
+ *          'title' => 'raamat',
+ *          'author' => 'autor',
+ *          'print' => 'trükikoda',
+ *          'status' => 'seisund'
+ *      )
+ * );
+ * Loo funktsioon nimega otsiRaamat, mille parameetrina on raamatute
+ * massiiv ja seisund, funktsioon tagastab massiivi,
+ * kus on raamatud vastava seisundiga (seisund tähendab,
+ * kas raamat on välja antud või mitte).
+ * Loo funktsioon nimega raamatuteTabel, mis võtab parameetrina massiivi, ja
+ * väljastab tulemused tabeli kujul. Tabeli pealkirjaks
+ * on massiivi võtmed (pealkirja loomiseks võib kasutada eraldi funktsiooni)
+ * */
