@@ -53,10 +53,13 @@ vormiAndmed();*/
  * on sooritatud õige arvu leidmisel.
  * */
 function manguVorm(){
+    $katseteArv = $_POST['katseteArv'];
+    $katseteArv = isset($katseteArv) ? ++$katseteArv : 0;
     echo '
         <form action="'.$_SERVER['PHP_SELF'].'" method="post">
             Arva ära arv 1-50:<br />
             <input type="text" name="kasutajaArv">
+            <input type="hidden" name="katseteArv" value="'.$katseteArv.'">
             <br />
             <input type="submit" value="Kontrolli">
         </form>
@@ -81,6 +84,7 @@ function kontrolliArv(){
         if(abs($kasutajaArv - $serveriArv) <= 5){
             if($kasutajaArv == $serveriArv){
                 echo 'Palju õnne! Arvasid ära!<br />';
+                echo 'Arvasid ära '.++$_POST['katseteArv'].' katsega';
                 exit;
             }
             echo 'Sinu arv on juba väga lähedal<br />';
